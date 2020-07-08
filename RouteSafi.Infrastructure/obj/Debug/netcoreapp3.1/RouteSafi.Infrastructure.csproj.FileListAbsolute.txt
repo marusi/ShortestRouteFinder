@@ -1,0 +1,15 @@
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\bin\Debug\netcoreapp3.1\RouteSafi.Domain.dll
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\obj\Debug\netcoreapp3.1\RouteSafi.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\obj\Debug\netcoreapp3.1\RouteSafi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\obj\Debug\netcoreapp3.1\RouteSafi.Infrastructure.AssemblyInfo.cs
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\bin\Debug\netcoreapp3.1\RouteSafi.Infrastructure.deps.json
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\bin\Debug\netcoreapp3.1\RouteSafi.Infrastructure.runtimeconfig.json
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\bin\Debug\netcoreapp3.1\RouteSafi.Infrastructure.runtimeconfig.dev.json
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\bin\Debug\netcoreapp3.1\RouteSafi.Infrastructure.dll
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\bin\Debug\netcoreapp3.1\RouteSafi.Infrastructure.pdb
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\bin\Debug\netcoreapp3.1\RouteSafi.Domain.pdb
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\obj\Debug\netcoreapp3.1\RouteSafi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\obj\Debug\netcoreapp3.1\RouteSafi.Infrastructure.csproj.CopyComplete
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\obj\Debug\netcoreapp3.1\RouteSafi.Infrastructure.dll
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\obj\Debug\netcoreapp3.1\RouteSafi.Infrastructure.pdb
+C:\Users\Hp\source\repos\RouteSafi.Infrastructure\obj\Debug\netcoreapp3.1\RouteSafi.Infrastructure.genruntimeconfig.cache
