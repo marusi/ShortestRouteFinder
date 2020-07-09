@@ -30,8 +30,8 @@ namespace Algorithms.ShortestRoute.Dijkstra
             if (!_links.ContainsKey(sourceId))
                 _links.Add(sourceId, new Dictionary<string, Func<Node, Link>>());
 
-            if (!_links[sourceId].ContainsKey(destinationId))
-               // throw new GraphBuilderException($"Link \"{sourceId}\" -> \"{destinationId}\" already exists. ");
+            if (_links[sourceId].ContainsKey(destinationId))
+                throw new GraphBuilderException($"Link \"{sourceId}\" -> \"{destinationId}\" already exists. ");
 
             _links[sourceId].Add(destinationId, node => Link.Create(weight, node));
             return this;

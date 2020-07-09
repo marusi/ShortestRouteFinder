@@ -38,6 +38,15 @@ namespace TouristChallenge1.Controllers
 
 
         [HttpPost]
+        /// <summary>
+        /// Create and Post a name and ID of a person to associate with a CSV Document.
+        /// </summary>
+        /// <remarks>
+        /// Here is a sample remarks placeholder.
+        /// </remarks>
+       
+   
+        /// <returns>A string status</returns>
         public async Task<IActionResult> CreateTourist([FromBody] SaveTouristDTO touristResource)
         {
 

@@ -50,7 +50,7 @@ namespace RouteSafi
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "MIT Licenese",
+                        Name = "MIT License",
                         Url = new Uri("https://github.com/marusi/REPO/blob/master/LICENSE"),
                     }
                 });
@@ -68,7 +68,7 @@ namespace RouteSafi
                 // Set the comments path for the Swagger JSON and UI.
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                //  c.IncludeXmlComments(xmlPath);
+                // c.IncludeXmlComments(xmlPath);
 
 
             });
