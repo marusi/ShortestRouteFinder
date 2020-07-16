@@ -13,6 +13,8 @@ using AutoMapper;
 using RouteSafi.Application.Services;
 using RouteSafi.Application.Routes;
 using RouteSafi.Application.Routes.Finder;
+using RouteSafi.Application.Users;
+using Microsoft.AspNetCore.Http;
 
 namespace RouteSafi.Infrastructure.DI
 {
@@ -36,6 +38,8 @@ namespace RouteSafi.Infrastructure.DI
             services.AddSingleton<IFinderShortestPath, DijkstraAdapter>();
             services.AddTransient<IDocumentStorage, FileSystemDocumentStorage>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<Application.Services.IUserService, UserService>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             //  services.AddScoped<ITransferRepository, TrasnferRepository>();
 
             //   setMediator(typeof(AccountQueryHandler));

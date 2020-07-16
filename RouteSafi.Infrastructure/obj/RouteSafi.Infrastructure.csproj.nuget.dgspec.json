@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\RouteSafi.Infrastructure\\RouteSafi.Infrastructure.csproj": {}
+    "C:\\Users\\Hp\\Desktop\\SRCroute\\RouteSafi.Infrastructure\\RouteSafi.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\RouteSafi.Domain\\RouteSafi.Domain.csproj": {
+    "C:\\Users\\Hp\\Desktop\\SRCroute\\RouteSafi.Domain\\RouteSafi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\RouteSafi.Domain\\RouteSafi.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\SRCroute\\RouteSafi.Domain\\RouteSafi.Domain.csproj",
         "projectName": "RouteSafi.Domain",
-        "projectPath": "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\RouteSafi.Domain\\RouteSafi.Domain.csproj",
+        "projectPath": "C:\\Users\\Hp\\Desktop\\SRCroute\\RouteSafi.Domain\\RouteSafi.Domain.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\RouteSafi.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Hp\\Desktop\\SRCroute\\RouteSafi.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\RouteSafi.Infrastructure\\RouteSafi.Infrastructure.csproj": {
+    "C:\\Users\\Hp\\Desktop\\SRCroute\\RouteSafi.Infrastructure\\RouteSafi.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\RouteSafi.Infrastructure\\RouteSafi.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\SRCroute\\RouteSafi.Infrastructure\\RouteSafi.Infrastructure.csproj",
         "projectName": "RouteSafi.Infrastructure",
-        "projectPath": "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\RouteSafi.Infrastructure\\RouteSafi.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Hp\\Desktop\\SRCroute\\RouteSafi.Infrastructure\\RouteSafi.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\RouteSafi.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Hp\\Desktop\\SRCroute\\RouteSafi.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -95,8 +95,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\RouteSafi.Domain\\RouteSafi.Domain.csproj": {
-                "projectPath": "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\RouteSafi.Domain\\RouteSafi.Domain.csproj"
+              "C:\\Users\\Hp\\Desktop\\SRCroute\\RouteSafi.Domain\\RouteSafi.Domain.csproj": {
+                "projectPath": "C:\\Users\\Hp\\Desktop\\SRCroute\\RouteSafi.Domain\\RouteSafi.Domain.csproj"
               }
             }
           }
@@ -141,6 +141,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.7.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.7.1, )"
             }
           },
           "imports": [

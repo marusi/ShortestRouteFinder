@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\Algorithms.ShortestRoute\\Algorithms.ShortestRoute.csproj": {}
+    "C:\\Users\\Hp\\Desktop\\SRCroute\\Algorithms.ShortestRoute\\Algorithms.ShortestRoute.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\Algorithms.ShortestRoute\\Algorithms.ShortestRoute.csproj": {
+    "C:\\Users\\Hp\\Desktop\\SRCroute\\Algorithms.ShortestRoute\\Algorithms.ShortestRoute.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\Algorithms.ShortestRoute\\Algorithms.ShortestRoute.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\SRCroute\\Algorithms.ShortestRoute\\Algorithms.ShortestRoute.csproj",
         "projectName": "Algorithms.ShortestRoute",
-        "projectPath": "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\Algorithms.ShortestRoute\\Algorithms.ShortestRoute.csproj",
+        "projectPath": "C:\\Users\\Hp\\Desktop\\SRCroute\\Algorithms.ShortestRoute\\Algorithms.ShortestRoute.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Desktop\\srcRouteSafi\\Algorithms.ShortestRoute\\obj\\",
+        "outputPath": "C:\\Users\\Hp\\Desktop\\SRCroute\\Algorithms.ShortestRoute\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

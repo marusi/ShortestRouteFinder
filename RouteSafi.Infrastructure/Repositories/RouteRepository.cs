@@ -36,7 +36,7 @@ namespace RouteSafi.Infrastructure.Repositories
                 WriteIndented = true
             };
             // hard coded value of 1 representing a tourist 
-            var fileSrcObject = documentRepository.GetDocuments(2);
+            var fileSrcObject = documentRepository.GetDocuments(1);
             var json = JsonSerializer.Serialize(fileSrcObject, options);
 
 

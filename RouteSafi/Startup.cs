@@ -18,6 +18,14 @@ using RouteSafi.Domain.Models;
 using RouteSafi.Infrastructure.DI;
 using System.Reflection;
 using System.IO;
+using Microsoft.AspNetCore.Identity;
+using RouteSafi.Infrastructure;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Http;
+using RouteSafi.Application.Services;
+using RouteSafi.Application.Users;
+using System.Text;
 
 namespace RouteSafi
 {
@@ -50,7 +58,7 @@ namespace RouteSafi
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "MIT License",
+                        Name = "MIT Licenese",
                         Url = new Uri("https://github.com/marusi/REPO/blob/master/LICENSE"),
                     }
                 });
@@ -68,10 +76,44 @@ namespace RouteSafi
                 // Set the comments path for the Swagger JSON and UI.
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                // c.IncludeXmlComments(xmlPath);
+                //  c.IncludeXmlComments(xmlPath);
 
 
             });
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 5;
+                options.Password.RequireLowercase = true;
+            }).AddEntityFrameworkStores<AppDbContext>()
+           .AddDefaultTokenProviders();
+
+            services.AddAuthentication(auth =>
+            {
+                auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                auth.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                {
+
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidAudience = Configuration["AuthSettings:Audience"],
+                    ValidIssuer = Configuration["AuthSettings:Issuer"],
+                    RequireExpirationTime = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes($"{Configuration["AuthSettings:Key"]}")),
+                    ValidateIssuerSigningKey = true
+                };
+                services.AddCors();
+            });
+            services.AddAuthorization(config =>
+            {
+               // config.AddPolicy(UserRoles.Admin, Policies.AdminPolicy());
+              //  config.AddPolicy(UserRoles.User, Policies.UserPolicy());
+            });
+
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
