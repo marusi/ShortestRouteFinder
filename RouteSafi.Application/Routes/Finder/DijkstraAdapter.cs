@@ -23,7 +23,9 @@ namespace RouteSafi.Application.Routes.Finder
                     graph.Nodes.Single(node => node.Id == to));
                 return new RouteResponse()
                 {
-                    Routes = path.Segments.Select<PathSegment, string>(s => $"{s.Origin.Id} > {s.Destination.Id} : Cost {s.Weight}").ToList(),
+                    Origin = from,
+                    Destination = to,
+                    Routes = path.Segments.Select(p => Map(p)).ToList(),
                     TotalCost = Convert.ToDecimal(path.Segments.Sum(s => s.Weight))
                 };
             }
